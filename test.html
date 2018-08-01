@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+		<style>
+    .ui-upload {
+      height: 30px;
+      width: 80px;
+      background-color: #00abff;
+      font-size: 14px;
+      line-height: 30px;
+      cursor: pointer;
+      display: inline-block;
+      text-align: center;
+      color: #fff;
+      border-radius: 3px;
+      margin-left: 20px;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <label for="upload" class="ui-upload">upload</label>
+  <input type="file" id="upload" style="display: none;" />
+  <label class="ui-upload">upload<input type="file" style="display: none;" /></label>
+  <input type="text" name="" id="file" class="ui-upload" /><input type="button" value="提交" class="ui-upload" style="margin-left: -10px;;"/>
+  
+  <script>
+  	$(function(){
+  		$("#file").click(function(){
+  			 $("#upload").trigger("click");
+  		}) 
+  		$("#upload").change(function(){
+  			$("#file").val($(this).val())
+  		})
+  	})
+  </script>
+</body>
+
+</html>

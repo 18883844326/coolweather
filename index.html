@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+		<link rel="stylesheet" type="text/css" href="css/tanchuang.css"/>
+		<script type="text/javascript" src="js/winsows.js" ></script>
+		<style type="text/css">
+			  .fileinput-button {
+            position: relative;
+            display: inline-block;
+        }
+
+        .fileinput-button input{
+            position: absolute;
+            right: 0px;
+            top: 0px;
+        }
+		</style>
+	</head>
+	<body>
+		 <span class="fileinput-button">
+            <span>上传</span>
+            <input type="file">
+        </span>
+
+		<button id="zz">试1试</button>
+		<button id="xx">试2试</button>
+	<div id="test"style="width:1000px;height: 2000px;text-align: center;margin: 50px auto;">
+		<div id="1" style="width:80%;height: 20%;background-color: #C4C4C4;">
+			<input type="checkbox" name="" id="11" value="" /><input id="a" type="text" />
+			<input type="checkbox" name="" id="12" value="" /><select></select>
+			<input type="checkbox" name="" id="13" value="" /><input type="button" />
+			<input type="checkbox" name="" id="14" value="" />14
+		</div>
+		<div id="2" style="width:80%;height: 20%;background-color: #B4B4B4">
+			<input type="checkbox" name="" id="21" value="" />21
+			<input type="checkbox" name="" id="22" value="" />22
+			<input type="checkbox" name="" id="23" value="" />23
+			<input type="checkbox" name="" id="24" value="" />24
+		</div>
+		<div name="3" style="width:80%;height: 20%;background-color: #A4A4A4">
+			<input type="radio" name="" val="31" value="" />31
+			<input type="radio" name="" id="32" value="" />32
+			<input type="radio" name="" id="33" value="" />33
+			<input type="radio" name="" id="34" value="" />34
+		</div>
+		<div name="3" style="width:80%;height: 20%;background-color: #D4D4D4">
+			<input type="radio" name="" val="31" value="" />31
+			<input type="radio" name="" id="32" value="" />32
+			<input type="radio" name="" id="33" value="" />33
+			<input type="radio" name="" id="34" value="" />34
+		</div>
+	</div>
+<div id="aa">
+	<button  @click="test">试试</button>
+</div>
+<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	var aa = new Vue({
+		el:"#aa",
+		methods:{
+			test:function(){
+				alert("OK")
+				return false;
+			}
+		}
+	})
+</script>
+	</body>
+</html>
